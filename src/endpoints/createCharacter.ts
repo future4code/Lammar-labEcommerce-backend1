@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { characters } from "../data";
+
 
 export default function createCharacter(
     req: Request,
@@ -8,12 +8,12 @@ export default function createCharacter(
 
     const {name, gender, destination} = req.body
 
-    characters.push({
-        id: Date.now(),
-        name,
-        gender,
-        destination
-    })
+    // characters.push({
+    //     id: Date.now(),
+    //     name,
+    //     gender,
+    //     destination
+    // })
 
 
 
